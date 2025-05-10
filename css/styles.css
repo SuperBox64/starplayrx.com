@@ -264,18 +264,19 @@ section h2 {
     font-size: 2.5rem;
     margin-bottom: 2rem;
     position: relative;
-    display: inline-block;
+    padding-bottom: 20px;
+    display: block;
 }
 
 section h2::after {
     content: '';
     position: absolute;
     left: 0;
-    bottom: -10px;
-    width: 80px;
+    bottom: 0;
+    width: 140px;
     height: 4px;
-    background: linear-gradient(to right, var(--gradient-start), var(--gradient-end));
-    border-radius: 2px;
+    background: var(--primary-color);
+    border-radius: 0;
 }
 
 /* Statement Section */
