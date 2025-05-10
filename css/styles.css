@@ -136,11 +136,13 @@ header .container {
     padding: 3px 0;
     z-index: 1;
     line-height: 1.2;
-    transition: color 0.3s ease;
+    transition: color 0.3s ease, text-shadow 0.3s ease;
 }
 
 .logo-text:hover {
     color: var(--primary-color);
+    text-shadow: 0 0 10px rgba(0, 110, 255, 0.4);
+    text-decoration: underline;
 }
 
 nav ul {
