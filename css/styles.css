@@ -142,7 +142,6 @@ header .container {
 .logo-text:hover {
     color: var(--primary-color);
     text-shadow: 0 0 10px rgba(0, 110, 255, 0.4);
-    text-decoration: underline;
 }
 
 nav ul {
@@ -259,14 +258,14 @@ nav ul li a:hover {
 
 /* Section Styles */
 section {
-    padding: 80px 0;
+    padding: 60px 0;
 }
 
 section h2 {
     font-size: 2.5rem;
-    margin-bottom: 2rem;
+    margin-bottom: 1.5rem;
     position: relative;
-    padding-bottom: 20px;
+    padding-bottom: 15px;
     display: inline-block;
 }
 
@@ -467,23 +466,94 @@ footer p {
     margin-bottom: 0.5rem;
 }
 
+.subtle-message {
+    color: rgba(255, 255, 255, 0.7);
+    font-style: italic;
+    margin: 1rem 0;
+}
+
+.footnote {
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 0.9rem;
+    max-width: 800px;
+    margin: 0.5rem auto;
+}
+
+/* Accessibility Note Section */
+.accessibility-note {
+    background: linear-gradient(155deg, #d84315, #0043a9);
+    color: white;
+    padding: 60px 0;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.accessibility-note::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 40%;
+    background: linear-gradient(to bottom, rgba(255, 102, 0, 0.4), transparent);
+    z-index: 1;
+}
+
+.accessibility-note .container {
+    position: relative;
+    z-index: 2;
+}
+
+.accessibility-note h2 {
+    color: white;
+    margin-bottom: 1.5rem;
+    position: relative;
+    padding-bottom: 15px;
+    display: inline-block;
+}
+
+.accessibility-note h2::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 4px;
+    background: white;
+    border-radius: 0;
+}
+
+.accessibility-note p {
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 1.1rem;
+    max-width: 800px;
+    margin: 0 auto 1rem;
+}
+
 /* Responsive Styles */
 @media (max-width: 768px) {
+    header {
+        padding: 0.5rem 0;
+    }
+    
     header .container {
         flex-direction: column;
+        padding: 0;
     }
     
     .logo {
-        margin-bottom: 1rem;
+        margin-bottom: 0.3rem;
     }
     
     nav ul {
         flex-wrap: wrap;
         justify-content: center;
+        gap: 0.3rem;
     }
     
     nav ul li {
-        margin: 0.5rem;
+        margin: 0.3rem;
     }
     
     .hero {
@@ -517,6 +587,14 @@ footer p {
 }
 
 @media (max-width: 480px) {
+    header {
+        padding: 0.3rem 0;
+    }
+
+    .logo-text {
+        font-size: 1.8rem;
+    }
+    
     .hero h1 {
         font-size: 2rem;
     }
@@ -531,5 +609,10 @@ footer p {
     
     .btn {
         padding: 0.8rem 1.5rem;
+    }
+    
+    nav ul li a {
+        padding: 0.3rem 0.5rem;
+        font-size: 0.9rem;
     }
 } 
