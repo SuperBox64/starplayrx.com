@@ -352,6 +352,40 @@ section h2::after {
     transform: scale(1.02);
 }
 
+.accessibility-features {
+    padding: 0;
+    margin: 2rem 0;
+    list-style: none;
+}
+
+.accessibility-features li {
+    position: relative;
+    padding: 0.8rem 0 0.8rem 2rem;
+    margin-bottom: 0.5rem;
+    color: rgba(255, 255, 255, 0.9);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.accessibility-features li:last-child {
+    border-bottom: none;
+}
+
+.accessibility-features li::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 1.1rem;
+    width: 10px;
+    height: 10px;
+    background: var(--primary-color);
+    border-radius: 50%;
+}
+
+.accessibility-features li strong {
+    color: white;
+    margin-right: 0.5rem;
+}
+
 /* Legal Section */
 .legal {
     background-color: var(--subtle-bg);
