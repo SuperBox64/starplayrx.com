@@ -1,48 +1,41 @@
 # StarPlayrX Website
 
-This repository contains the public website for StarPlayrX, a third-party SiriusXM streaming radio player that was designed with accessibility as a primary focus.
-
-## Purpose
-
-This website serves as an official statement regarding the removal of StarPlayrX from the Apple App Store following actions from SiriusXM.
-
-The website provides:
-- A formal statement regarding the App Store removal
-- Information about StarPlayrX's accessibility features
-- Legal information and context surrounding the removal
-
-## Website Features
-
-- Modern, responsive design that works on all devices
-- Accessibility-friendly interface
-- Clear presentation of the legal situation
-
-## Development
-
-The website is built using:
-- HTML5
-- CSS3 (with animations and responsive design)
-- Vanilla JavaScript
-
-## Viewing the Website
-
-The website is available at [https://superbox64.github.io/starplayrx](https://superbox64.github.io/starplayrx)
+This repository contains the official statement website for StarPlayrX regarding the app's removal from the App Store.
 
 ## Local Development
 
-To run this website locally:
+### Prerequisites
+- Python 3.x installed on your system
 
-1. Clone the repository
-```
-git clone https://github.com/superbox64/starplayrx.git
+### Running the Local Server
+
+1. Clone this repository or download the files
+2. Open a terminal or command prompt
+3. Navigate to the directory containing the files
+4. Run the Python server:
+
+```bash
+python server.py
 ```
 
-2. Open the index.html file in your web browser
+The server will:
+- Start on port 8080
+- Automatically open your default web browser
+- Display the website at http://localhost:8080
+
+If the browser doesn't open automatically, manually visit http://localhost:8080 in your web browser.
+
+### Stopping the Server
+
+Press `Ctrl+C` in the terminal to stop the server.
+
+## Website Features
+
+- Official statement regarding app removal
+- Accessibility commitment information
+- Legal details
+- Screen-reader accessible TestFlight Beta link
+- Source code access via GitHub
 
 ## License
-
-See the LICENSE file for details.
-
-## Contact
-
-For any inquiries, please open an issue on this repository. 
+Copyright © 2025 StarPlayrX. All rights reserved. 

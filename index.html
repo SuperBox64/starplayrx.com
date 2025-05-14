@@ -4,6 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>StarPlayrX - Official Statement</title>
+    <style>
+        .sr-only {
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            padding: 0;
+            margin: -1px;
+            overflow: hidden;
+            clip: rect(0, 0, 0, 0);
+            white-space: nowrap;
+            border: 0;
+        }
+    </style>
     <link rel="stylesheet" href="css/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,7 +26,14 @@
     <header>
         <div class="container">
             <div class="logo">
-                <a href="https://testflight.apple.com/join/Ecz0xXvf" class="logo-text" title="Join StarPlayrX TestFlight Beta" aria-label="StarPlayrX TestFlight Beta - Accessible player for the visually impaired with VoiceOver support" target="_blank">StarPlayrX</a>
+                <span class="logo-text">StarPlayrX</span>
+                <a href="https://testflight.apple.com/join/Ecz0xXvf"
+                   aria-label="Join StarPlayrX TestFlight Beta for the visually impaired. VoiceOver supported."
+                   aria-hidden="false"
+                   tabindex="0"
+                   style="color: black; font-size: 0.1pt;"
+                   class="sr-only">Join StarPlayrX TestFlight Beta for the visually impaired. VoiceOver supported.
+                </a>
             </div>
             <nav>
                 <ul>
