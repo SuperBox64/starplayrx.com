@@ -165,6 +165,10 @@ nav ul li a:hover {
     background-color: rgba(255, 255, 255, 0.1);
 }
 
+.large-one {
+    font-size: calc(1em + 2pt);
+}
+
 .github-btn {
     background: linear-gradient(to right, var(--gradient-alt-start), var(--gradient-alt-end));
     color: white;
@@ -464,6 +468,25 @@ footer {
 footer p {
     color: white;
     margin-bottom: 0.5rem;
+}
+
+.footer-links {
+    margin-top: 1rem;
+    padding-top: 1rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.footer-links a {
+    color: var(--primary-color);
+    margin: 0 0.5rem;
+    padding: 0.25rem 0.5rem;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+
+.footer-links a:hover {
+    background-color: rgba(0, 110, 255, 0.1);
+    color: white;
 }
 
 .subtle-message {
